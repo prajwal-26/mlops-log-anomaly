@@ -6,9 +6,18 @@ __pycache__/
 .pytest_cache/
 
 # Data — tracked by DVC not Git
-data/raw/
-data/processed/
-data/reference/
+# Data files — tracked by DVC not Git
+data/raw/*.jsonl
+data/raw/*.csv
+data/raw/*.parquet
+data/processed/*.parquet
+data/processed/*.csv
+data/reference/*.parquet
+
+# But DO commit .dvc pointer files and .gitignore files
+!data/**/*.dvc
+!data/**/.gitignore
+
 
 # Models — tracked by MLflow not Git
 models/
