@@ -1,0 +1,32 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# Data — tracked by DVC not Git
+data/raw/
+data/processed/
+data/reference/
+
+# Models — tracked by MLflow not Git
+models/
+*.pkl
+*.joblib
+*.onnx
+
+# Environment
+.env
+*.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# MLflow local
+mlruns/
+mlartifacts/
+
+# DVC
+.dvc/cache/
