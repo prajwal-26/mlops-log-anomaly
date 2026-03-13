@@ -1,0 +1,15 @@
+# Never copy these into the image
+venv/
+.env
+*.pyc
+__pycache__/
+.git/
+data/
+mlartifacts/
+mlflow.db
+*.dvc
+.dvc/
+tests/
+*.md
+.gitignore
+notebooks/
