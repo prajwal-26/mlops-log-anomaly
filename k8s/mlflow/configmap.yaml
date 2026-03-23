@@ -1,0 +1,10 @@
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mlflow-config
+  namespace: mlops
+data:
+  AWS_DEFAULT_REGION: "eu-west-2"
+  no_proxy: "localhost,127.0.0.1,amazonaws.com"
+  NO_PROXY: "localhost,127.0.0.1,amazonaws.com"

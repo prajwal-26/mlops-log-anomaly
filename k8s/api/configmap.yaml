@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: api-config
+  namespace: mlops
+data:
+  AWS_DEFAULT_REGION: "eu-west-2"
+  MLFLOW_TRACKING_URI: "http://mlflow:5000"
+  MODEL_NAME: "log-anomaly-detector"
+  MODEL_ALIAS: "production"
+  no_proxy: "localhost,127.0.0.1,mlflow,amazonaws.com"
+  NO_PROXY: "localhost,127.0.0.1,mlflow,amazonaws.com"
